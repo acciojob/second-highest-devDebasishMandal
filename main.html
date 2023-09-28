@@ -18,13 +18,13 @@
           if(arr[i]>mx){
              sm=mx;
              mx=arr[i];
-            
+             
           }else if(arr[i]>sm && arr[i]!=mx){
             sm=arr[i];
           }
         }
       }
-      return sm;			
+      return sm === Number.MIN_VALUE ? -Infinity : sm;			
 		}
 
 		function Main(){ 
